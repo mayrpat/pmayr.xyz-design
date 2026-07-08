@@ -11,43 +11,63 @@
   }
   body {
     background: #fafaf8;
+    font-family: Georgia, 'Times New Roman', serif;
+    padding: 56px 64px;
     display: flex;
     flex-direction: column;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', serif;
-    position: relative;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e0e0e0;
   }
-  .line {
-    position: absolute;
-    left: 60px;
-    right: 60px;
-    height: 1px;
-    background: #e0e0e0;
-  }
-  .line-top    { top: 190px; }
-  .line-bottom { bottom: 190px; }
-  .title {
-    font-size: 112px;
+  .logo {
+    font-size: 24px;
     font-weight: 800;
     color: #000;
-    letter-spacing: -3px;
-    line-height: 1;
-    margin-bottom: 18px;
+    letter-spacing: -0.5px;
   }
-  .url {
-    font-size: 17px;
+  .date {
+    font-size: 16px;
     color: #8a6dba;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.15em;
-    text-transform: lowercase;
+  }
+  .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  /* Reduce font-size here for longer titles, e.g. font-size: 56px */
+  .title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    max-width: 960px;
+  }
+  .footer {
+    padding-top: 28px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 15px;
+    color: #8a6dba;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   }
 </style>
 </head>
 <body>
-  <div class="line line-top"></div>
-  <div class="title">PMAYR</div>
-  <div class="url">pmayr.xyz</div>
-  <div class="line line-bottom"></div>
+  <div class="header">
+    <div class="logo">PMAYR</div>
+    <div class="date">8 Sep 2025</div> <!-- EDIT DATE -->
+  </div>
+  <div class="content">
+    <div class="title">Backing founders who export crypto to the world</div> <!-- EDIT TITLE -->
+  </div>
+  <div class="footer">pmayr.xyz</div>
 </body>
 </html>
