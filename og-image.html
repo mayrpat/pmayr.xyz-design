@@ -8,55 +8,64 @@
     width: 1200px;
     height: 630px;
     overflow: hidden;
+    background: #fafaf8;
   }
   body {
-    background: #fafaf8;
+    position: relative;
     font-family: Georgia, 'Times New Roman', serif;
-    padding: 56px 64px;
-    display: flex;
-    flex-direction: column;
   }
   .header {
+    position: absolute;
+    top: 52px;
+    left: 64px;
+    right: 64px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-bottom: 28px;
+    align-items: baseline;
+    padding-bottom: 22px;
     border-bottom: 1px solid #e0e0e0;
   }
   .logo {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
     color: #000;
     letter-spacing: -0.5px;
   }
   .date {
-    font-size: 16px;
+    font-size: 15px;
     color: #8a6dba;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   }
+  /* Title is centered to the full 1200x630 canvas */
   .content {
-    flex: 1;
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
+    padding: 0 80px;
   }
-  /* Reduce font-size here for longer titles, e.g. font-size: 56px */
+  /* Reduce font-size for longer titles, e.g. 56px */
   .title {
     font-size: 72px;
     font-weight: 700;
     color: #000;
     text-align: center;
     line-height: 1.2;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
     max-width: 960px;
   }
   .footer {
-    padding-top: 28px;
+    position: absolute;
+    bottom: 52px;
+    left: 64px;
+    right: 64px;
     border-top: 1px solid #e0e0e0;
-    font-size: 15px;
+    padding-top: 20px;
+    font-size: 14px;
     color: #8a6dba;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.05em;
   }
 </style>
 </head>
